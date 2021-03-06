@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+//Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
@@ -38,13 +38,12 @@ ${answers.description}
     `
 }
 
-// function to initialize program
+// 
 function init() {
 
     inquirer.prompt([{
             message: "What is your project title?",
             name: "title",
-            // default: "project"
         },
         {
             message: "Write a description of your project:",
@@ -53,7 +52,6 @@ function init() {
         {
             message: "What commands need to be ran to install your project?",
             name: "installation",
-            // default: "npm i"
         },
         {
             message: "Write any information needed for usage:",
@@ -66,7 +64,6 @@ function init() {
         {
             message: "What commands need to be ran to test your project?",
             name: "tests",
-            // default: "npm test"
         },
         {
             message: "Choose a type of license",
@@ -88,5 +85,5 @@ function init() {
     })
 }
 
-// function call to initialize program
+// 
 init();
